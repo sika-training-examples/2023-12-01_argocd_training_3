@@ -8,6 +8,6 @@ metadata:
 stringData:
   project: default
   type: git
-  url: https://gitlab.sikademo.com/ondrejsika/private.git
-  username: ondrejsika
-  password: zt1a4d_BJwNLcWKDf7vF
+  url: https://gitlab.sikademo.com/example/3.git
+  username: demo
+  password: asdfasdf
