@@ -24,7 +24,7 @@ spec:
       releaseName: image-updater-public
       values: |
         host: image-updater-public.k8s3.sikademo.com
-        image: reg.istry.cz/image-updater-example
+        image: reg.istry.cz/hello-world-helm-image-updater-example
   syncPolicy:
     automated:
       prune: true
