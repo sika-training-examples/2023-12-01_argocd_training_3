@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: hello-world-helm-image-updater-public
+  name: image-updater-public
   namespace: argocd
   annotations:
     argocd-image-updater.argoproj.io/image-list: 1=reg.istry.cz/image-updater-example:latest
@@ -13,7 +13,7 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: hello-world-helm-image-updater-public
+    namespace: image-updater-public
     server: https://kubernetes.default.svc
   project: default
   source:
@@ -21,10 +21,10 @@ spec:
     targetRevision: HEAD
     path: charts/one-image
     helm:
-      releaseName: hello-world-helm-image-updater-public
+      releaseName: image-updater-public
       values: |
-        host: hello-world-helm-image-updater-public.k8s3.sikademo.com
-        image: reg.istry.cz/image-updater-example
+        host: image-updater-public.k8s3.sikademo.com
+        image: ttl.sh/ondrej
   syncPolicy:
     automated:
       prune: true
