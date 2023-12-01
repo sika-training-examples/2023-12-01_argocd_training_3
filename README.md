@@ -33,7 +33,7 @@ slu argocd initial-password | pbcopy
 
 See
 
-<https://argocd.k8s.sikademo.com>
+<https://argocd.k8s3.sikademo.com>
 
 ## Create basic ArgoCD App
 
