@@ -24,5 +24,5 @@ spec:
       releaseName: one-image
       values: |
         host: one-image.k8s3.sikademo.com
-        image: ondrejsika/iceland2
+        image: ondrejsika/iceland-2
         replicas: 3
