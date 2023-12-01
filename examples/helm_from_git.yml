@@ -19,8 +19,10 @@ spec:
   source:
     repoURL: https://github.com/sikalabs/charts.git
     targetRevision: HEAD
-    path: charts/hello-world
+    path: charts/one-image
     helm:
-      releaseName: helm-from-git
+      releaseName: one-image
       values: |
+        host: one-image.k8s3.sikademo.com
+        image: ondrejsika/iceland2
         replicas: 3
